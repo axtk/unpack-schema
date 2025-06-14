@@ -1,6 +1,6 @@
-import type {ZodV3Min, UnpackedZodV3} from './shapes/ZodV3';
-import type {ZodV4Min, UnpackedZodV4} from './shapes/ZodV4';
-import type {YupMin, UnpackedYup} from './shapes/Yup';
+import type {UnpackedYup, YupMin} from './shapes/Yup';
+import type {UnpackedZodV3, ZodV3Min} from './shapes/ZodV3';
+import type {UnpackedZodV4, ZodV4Min} from './shapes/ZodV4';
 
 export type UnpackedSchema<
     T,
