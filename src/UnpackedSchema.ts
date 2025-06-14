@@ -7,9 +7,9 @@ export type UnpackedSchema<
     PresumedType = unknown,
     Fallback = unknown,
 > = T extends ZodV4Min<PresumedType>
-      ? UnpackedZodV4<T>
-      : T extends ZodV3Min<PresumedType>
-        ? UnpackedZodV3<T>
-        : T extends YupMin<PresumedType>
-          ? UnpackedYup<T>
-          : Fallback;
+    ? UnpackedZodV4<T>
+    : T extends ZodV3Min<PresumedType>
+      ? UnpackedZodV3<T>
+      : T extends YupMin<PresumedType>
+        ? UnpackedYup<T>
+        : Fallback;
