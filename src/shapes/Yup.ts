@@ -1,8 +1,8 @@
-export type YupMin = {
-    __outputType: unknown;
+export type YupMin<T = unknown> = {
+    __outputType: T;
 };
 
-export type Yup = YupMin & {
+export type Yup<T = unknown> = YupMin<T> & {
     cast: (value: unknown, options?: object | undefined) => unknown;
 };
 
