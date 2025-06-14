@@ -1,0 +1,13 @@
+{
+  "name": "unpack-schema",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "preversion": "npm run shape",
+    "shape": "npx codeshape"
+  },
+  "author": "axtk",
+  "license": "ISC"
+}
