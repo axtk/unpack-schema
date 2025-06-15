@@ -14,6 +14,8 @@ type Params = Schema<ParamsShape>;
 🔹 Extract types from Zod/Yup schemas without importing `.infer` or `InferType` of those packages:
 
 ```ts
+import type {UnpackedSchema} from 'unpack-schema';
+
 function process(params: UnpackedSchema<Params, ParamsShape>) {
     // ...
 }
