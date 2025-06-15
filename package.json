@@ -1,7 +1,7 @@
 {
   "name": "unpack-schema",
   "version": "1.0.2",
-  "description": "",
+  "description": "Define and extract Zod or Yup schema types without importing those packages",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
@@ -9,5 +9,12 @@
     "shape": "npx codeshape"
   },
   "author": "axtk",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [
+    "schema",
+    "typed schema",
+    "inference",
+    "zod",
+    "yup"
+  ]
 }
