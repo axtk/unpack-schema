@@ -10,6 +10,10 @@
   },
   "author": "axtk",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/axtk/unpack-schema.git"
+  },
   "keywords": [
     "schema",
     "typed schema",
