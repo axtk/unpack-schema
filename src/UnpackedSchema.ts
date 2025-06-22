@@ -5,11 +5,14 @@ import type {UnpackedZodV4, ZodV4Min} from './shapes/ZodV4';
 export type UnpackedSchema<
     T,
     PresumedType = unknown,
-    Fallback = unknown,
-> = T extends ZodV4Min<PresumedType>
+    UnrecognizedFallback = unknown,
+    UndefinedFallback = undefined,
+> = T extends undefined
+  ? UndefinedFallback
+  : T extends ZodV4Min<PresumedType>
     ? UnpackedZodV4<T>
     : T extends ZodV3Min<PresumedType>
       ? UnpackedZodV3<T>
       : T extends YupMin<PresumedType>
         ? UnpackedYup<T>
-        : Fallback;
+        : UnrecognizedFallback;
