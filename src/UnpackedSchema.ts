@@ -8,11 +8,11 @@ export type UnpackedSchema<
     UnrecognizedFallback = unknown,
     UndefinedFallback = undefined,
 > = T extends undefined
-  ? UndefinedFallback
-  : T extends ZodV4Min<PresumedType>
-    ? UnpackedZodV4<T>
-    : T extends ZodV3Min<PresumedType>
-      ? UnpackedZodV3<T>
-      : T extends YupMin<PresumedType>
-        ? UnpackedYup<T>
-        : UnrecognizedFallback;
+    ? UndefinedFallback
+    : T extends ZodV4Min<PresumedType>
+      ? UnpackedZodV4<T>
+      : T extends ZodV3Min<PresumedType>
+        ? UnpackedZodV3<T>
+        : T extends YupMin<PresumedType>
+          ? UnpackedYup<T>
+          : UnrecognizedFallback;
