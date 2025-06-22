@@ -1,6 +1,6 @@
 {
   "name": "unpack-schema",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Define and extract Zod or Yup schema types without importing those packages",
   "type": "module",
   "main": "dist/index.js",
