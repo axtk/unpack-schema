@@ -5,8 +5,9 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "preversion": "npm run shape",
-    "shape": "npx codeshape"
+    "preversion": "npx npm-run-all typecheck shape",
+    "shape": "npx codeshape",
+    "typecheck": "tsc --noEmit"
   },
   "author": "axtk",
   "license": "ISC",
@@ -20,5 +21,8 @@
     "inference",
     "zod",
     "yup"
-  ]
+  ],
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
 }
